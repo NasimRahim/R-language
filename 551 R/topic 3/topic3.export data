@@ -1,0 +1,17 @@
+#5) export data from R to external sources
+#create a simple dataset
+
+name=c("ali","abu","siti","sofea")
+gender=c("male","male","female","female")
+age=c(6,5,4,5)
+
+kid=data.frame(name,gender,age)
+str(kid)
+kid$gender=as.factor(kid$gender)
+str(kid)
+
+#into excel file(.csv)
+write.csv(kid,"C:\\Users\\nasim\\Desktop\\semester 4\\551 R\\topic 3\\kid.csv",row.names=F)
+
+
+

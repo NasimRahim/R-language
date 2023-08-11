@@ -1,0 +1,26 @@
+#select/delete variables
+#if error use attach(bmi)
+#if naik error use remove rm(weight) the callback weight
+
+#display/list the first 5 samples
+head(bmi,5)
+#selecting data variables
+subset(bmi,gender=="male") #want only data who is male
+subset(bmi,gender=="male" & Program=="Computers")
+subset(bmi,gender=="male" & Program=="Computers"& height>180)
+
+#deleting data/variables
+bmi[,-4] #delete 4th column(removing program)
+bmi[-c(21:35),] #delete observation
+bmi[1:5,c(1,4)] #selecting specific column
+
+#checking on missing value
+is.na(bmi)
+which(is.na(bmi(bmi$height)))
+summary(bmi)
+
+#to remove missing value
+na.omit(miss.dat)
+
+#5) Export data from R to external sources/Writes datasets
+

@@ -1,0 +1,7 @@
+#Topic 2 
+#4(array)
+#different between vector,matrices,array
+#answer: Vector 1dimensional,matrices 2dimensional,array 3dimensional
+#creating array using array() function
+
+a=array(1:24,c(3,4,2))#a=array(1:24,c(row,column,group))

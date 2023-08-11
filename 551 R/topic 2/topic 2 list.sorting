@@ -1,0 +1,16 @@
+#topic 2 LIST
+
+#sort
+#how to create a vector
+
+s=c(10,15,6,13,18);s
+length(s)
+
+sort(s) #increasing 
+
+#QUESTION sort in decreasing
+sort(s,decreasing=T)
+rev(sort(s)) #same as decreasing order 
+
+order(s) #give position of real data after sorting
+rank(s) #arrange according to the position of order
